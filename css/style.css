@@ -1,0 +1,733 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Urbanist', sans-serif; */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+}
+
+input {
+    all: unset;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+}
+header {
+    width: 1920px;
+    height: 125px;
+    background-color: #1c1814;
+}
+.navigation {
+    padding: 30px 300px;
+}
+.navbar__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+.navbar__list--item {
+    display: inline;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+.navbar__list--item:first-child {
+    color: #c99e71;
+}
+.navbar__list--item:nth-child(5) {
+    width: 506px;
+    display: flex;
+    justify-content: center;
+    padding-right: 72px;
+}
+.search {
+    width: 20px;
+    height: 20px;
+}
+.bag {
+    width: 30px;
+    height: 30px;
+}
+.container {
+    margin: 0 375px;
+}
+.morning__coffee {
+    width: 1920px;
+    height: 835px;
+    background-image: url(../img/fon.jpg);
+}
+
+.coffee__info {
+    height: 426px;
+    width: 529px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.coffee__content {
+    padding-top: 147px;
+}
+.coffee__title {
+    font-size: 72px;
+    line-height: 130%;
+    width: 529px;
+    height: 188px;
+    color: #fff;
+    font-family: "Righteous", cursive;
+}
+.coffee__text {
+    width: 511px;
+    height: 72px;
+    font-family: "Righteous";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+
+    color: rgba(255, 255, 255, 0.8);
+}
+.coffee--input {
+    width: 202px;
+    height: 70px;
+    background: #c99e71;
+}
+.text__button {
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.product {
+    width: 1920px;
+    height: 3138px;
+    background-color: #14110e;
+}
+.coffee__product--container {
+    display: flex;
+}
+.best__coffee {
+    width: 366px;
+    height: 444px;
+    padding-top: 140px;
+}
+.best__coffee + .best__coffee {
+    margin-left: 36px;
+}
+.info__product {
+    display: flex;
+    padding-bottom: 24px;
+}
+.number__product {
+    display: flex;
+    width: 24px;
+    height: 30px;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #c99e71;
+}
+.title__product {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Righteous";
+    color: #ffffff;
+    padding-left: 12px;
+}
+.history__coffee {
+    display: flex;
+    margin-top: 310px;
+}
+.img__history {
+    display: flex;
+    width: 628px;
+    height: 635px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.history__coffee--img:first-child {
+    padding-bottom: 32px;
+    padding-right: 32px;
+}
+.history__coffee--img:nth-child(2) {
+    padding-right: 32px;
+}
+
+.history__coffee--text {
+    width: 510px;
+    height: 635px;
+    background-color: #1c1814;
+    padding-left: 56px;
+    margin-left: 32px;
+}
+.history__title {
+    font-size: 18px;
+    line-height: 22px;
+    color: #c99e71;
+    padding-top: 120px;
+    margin-bottom: 12px;
+}
+.history__name {
+    width: 398px;
+    height: 124px;
+    font-family: "Righteous";
+    font-size: 48px;
+    line-height: 62, 4px;
+    color: #ffffff;
+    margin-bottom: 36px;
+}
+.history__text {
+    width: 398px;
+    height: 174px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    text-transform: capitalize;
+    font-family: "Urbanist", sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+}
+.popular__product {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Urbanist", sans-serif;
+    color: #c99e71;
+    width: 171px;
+    height: 22px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-top: 140px;
+}
+.popular__product--coffee {
+    font-size: 48px;
+    line-height: 130%;
+    color: #ffffff;
+    width: 567px;
+    height: 62px;
+    font-family: "Righteous";
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.popular__product--info {
+    width: 366px;
+    height: 579px;
+    background-color: #121315;
+    margin-top: 104px;
+}
+.popular__product--info + .popular__product--info {
+    margin-left: 36px;
+}
+.popular__product--img {
+    padding: 48px;
+    padding-bottom: 36px;
+}
+.popular__product--name {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Righteous";
+    padding-left: 61px;
+}
+.popular__product--buy {
+    width: 169px;
+    height: 48px;
+    background-color: #c99e71;
+    margin-left: 99px;
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+}
+.popular__product--buy p {
+    padding-left: 12px;
+    cursor: pointer;
+}
+.text__buy {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    font-family: "Urbanist", sans-serif;
+    align-items: center;
+}
+.popular__product--container {
+    display: flex;
+}
+.popular__product--grade {
+    width: 186px;
+    height: 20px;
+    margin-left: 91px;
+    margin-bottom: 20px;
+}
+.popular__product--price {
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Urbanist", sans-serif;
+    width: 181px;
+    height: 22px;
+    padding-left: 94px;
+    padding-top: 20px;
+}
+.popular__product--start-price {
+    color: #c99e71;
+}
+.button__view--all {
+    margin: 0 auto;
+    padding-left: 475px;
+    padding-top: 56px;
+}
+.popular__product--view-all {
+    width: 252px;
+    height: 62px;
+    background-color: #c99e71;
+    cursor: pointer;
+}
+.text__view {
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+.coffee__machine {
+    background-color: #1c1814;
+    margin-top: 140px;
+    width: 1170px;
+    height: 530px;
+    display: flex;
+}
+.coffee__machine--img {
+    padding: 85px;
+    padding-left: 169px;
+    padding-right: 160px;
+}
+.coffee__machine--for-home {
+    font-size: 48px;
+    line-height: 130%;
+    color: #ffffff;
+    font-family: "Righteous";
+    width: 501px;
+    height: 124px;
+    padding-top: 72px;
+}
+.coffee__machine--title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    font-family: "Urbanist", sans-serif;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+    padding-top: 108px;
+    width: 535px;
+    height: 116px;
+}
+.coffee__machine--discover-now {
+    padding-top: 140px;
+}
+.coffee__machine--button {
+    width: 215px;
+    height: 62px;
+    background-color: #c99e71;
+    cursor: pointer;
+}
+
+.discover {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+}
+.menu {
+    height: 3475px;
+    width: 1920px;
+    background-color: #14110e;
+}
+.menu__header {
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Urbanist", sans-serif;
+    color: #c99e71;
+    padding-left: 560px;
+}
+.popular__menu {
+    font-size: 48px;
+    line-height: 130%;
+    font-family: "Righteous";
+    color: #ffffff;
+    padding-left: 350px;
+    padding-top: 12px;
+}
+.americano__container {
+    border: 1px solid #32323d;
+    box-sizing: border-box;
+    width: 565px;
+    height: 120px;
+    display: flex;
+    margin-top: 56px;
+}
+.right__column {
+    margin-left: 40px;
+}
+
+.americano__img {
+    width: 72px;
+    height: 72px;
+    margin: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+.americano__title {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Righteous";
+    color: #ffffff;
+    width: 256px;
+    height: 30px;
+    padding-top: 45px;
+}
+.americano__price {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #c99e71;
+    margin: 49px;
+    margin-right: 23px;
+    margin-left: 117px;
+}
+.americano__column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 705px;
+}
+.testimonial__header {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Urbanist", sans-serif;
+    color: #c99e71;
+    padding-top: 140px;
+    padding-left: 540px;
+}
+.says__john--container {
+    display: flex;
+}
+.says {
+    font-size: 48px;
+    line-height: 130%;
+    font-family: "Righteous";
+    color: #ffffff;
+    padding-top: 12px;
+    padding-left: 365px;
+}
+
+.says__john {
+    width: 565px;
+    height: 305px;
+    background-color: #1c1814;
+    margin-top: 56px;
+    display: flex;
+    margin-right: 40px;
+}
+.says__john--img {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 24px;
+}
+.says__john--text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+    width: 332px;
+    height: 145px;
+    margin-top: 40px;
+    margin-right: 40px;
+    font-family: "Urbanist", sans-serif;
+}
+
+.says__name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    font-family: "Urbanist", sans-serif;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 28px;
+    margin-left: 40px;
+    display: flex;
+}
+.says__designer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    font-family: "Urbanist", sans-serif;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.8;
+    margin-left: 40px;
+}
+.user {
+    width: 161px;
+    height: 25px;
+}
+.says__grade {
+    margin-top: 60px;
+    margin-left: 210px;
+}
+.says__people--number {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+    font-family: "Urbanist", sans-serif;
+    color: #c99e71;
+    padding-top: 36px;
+}
+.line {
+    display: flex;
+    flex-direction: row;
+}
+.says__people--linebrown {
+    width: 50px;
+    height: 4px;
+}
+.says__people--line {
+    width: 70px;
+    height: 4px;
+}
+.columnleft__people {
+    display: flex;
+    justify-content: space-between;
+}
+.says__people--transition {
+    padding-top: 36px;
+}
+.says__people--comeback {
+    margin-right: 16px;
+    cursor: pointer;
+}
+.says__people--move {
+    cursor: pointer;
+}
+.place {
+    padding-top: 145px;
+    display: flex;
+}
+.reservation {
+    background-color: #1c1814;
+}
+.reservation__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Urbanist", sans-serif;
+    color: #c99e71;
+    padding-top: 72px;
+    padding-left: 244px;
+}
+.reservation__table {
+    font-size: 48px;
+    line-height: 60px;
+    font-family: "Righteous";
+    color: #ffffff;
+    padding-top: 12px;
+    padding-left: 116px;
+}
+.border__input {
+    width: 489px;
+    height: 64px;
+    background-color: #14110e;
+    margin-top: 56px;
+    margin-left: 48px;
+}
+.border__input + .border__input {
+    margin-top: 24px;
+}
+.info__meta {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 180%;
+    text-transform: capitalize;
+    font-family: "Urbanist", sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 20px;
+}
+.reservation__books--table {
+    width: 202px;
+    height: 62px;
+    background-color: #c99e71;
+    margin-top: 56px;
+    margin-left: 192px;
+}
+.reservation__books--button {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 20px 36px;
+    cursor: pointer;
+}
+.latest__news {
+    font-size: 48px;
+    line-height: 130%;
+    font-family: "Righteous";
+    color: #ffffff;
+    padding-top: 12px;
+    padding-left: 405px;
+}
+
+.news__coffee {
+    padding-top: 56px;
+    display: flex;
+}
+
+.news__coffee--container {
+    width: 366px;
+    height: 528px;
+    background-color: #1c1814;
+}
+.news__two {
+    margin: 0 34px;
+}
+.by {
+    color: #c99e71;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.news__coffee--rasaline {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Urbanist", sans-serif;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 24px;
+}
+.news__coffee--date {
+    padding-left: 149px;
+}
+.news__coffee--ideal {
+    padding-top: 16px;
+    font-size: 20px;
+    line-height: 150%;
+    font-family: "Righteous";
+    text-transform: capitalize;
+    color: #ffffff;
+    padding-left: 24px;
+}
+.news__coffee--more {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #c99e71;
+    font-family: "Urbanist", sans-serif;
+    padding-left: 24px;
+    padding-top: 33px;
+    display: flex;
+    cursor: pointer;
+}
+.arrow-right {
+    padding-left: 8px;
+}
+.navigation__under {
+    padding-top: 166px;
+}
+.navbar__list--under {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+.navbar__list--under {
+    display: inline;
+    color: #fff;
+    font-family: "Urbanist", sans-serif;
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+}
+.enter__your--email {
+    width: 328px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: #1c1814;
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+}
+.your__email {
+    ont-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Urbanist", sans-serif;
+    opacity: 0.8;
+}
+.move__right {
+    margin-left: 122px;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0px 22px 44px rgba(201, 158, 113, 0.2);
+    border-radius: 20px;
+}
+.footer__bg {
+    background-color: #1c1814;
+    width: 1920px;
+    height: 90px;
+}
+.e-tennis {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    font-family: "Urbanist", sans-serif;
+    color: #ffffff;
+    padding-top: 33px;
+    text-align: center;
+}
